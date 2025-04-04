@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -171,6 +170,37 @@ header nav .nav-links a:hover::after {
 .menu.active span:nth-of-type(3) {
     transform: translateY(3px) rotate(-45deg);
     transform-origin: left;
+}
+.goals {
+    padding: 20px;
+    background: linear-gradient(to left, #4200fc, #f901fc);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.goals h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: linear-gradient(to left, #4200fc, #f901fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.goals a {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.goals a:hover {
+    text-decoration: underline;
+}
+.goals:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 @media (min-width: 768px) {
     .hero-text .btn {
