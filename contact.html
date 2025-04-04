@@ -9,6 +9,12 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+        })();
+    </script>
 </head>
 <body>
     <div class="container">
@@ -37,7 +43,7 @@
         <h1>Contact Me</h1>
         
         <div class="contact-form">
-            <form action="mailto:dongekrushna@gmail.com" method="POST" enctype="text/plain">
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -70,5 +76,16 @@
             <p>Twitter: <a href="https://x.com/Krushnad9506">@Krushnad9506</a></p>
         </div>
     </div>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                }, function(error) {
+                    alert('Failed to send message. Please try again later.');
+                });
+        });
+    </script>
 </body>
 </html>
