@@ -12,7 +12,7 @@
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function() {
-            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+            emailjs.init("AM5RWvCQBFZVsDOFv"); // Replace with your EmailJS user ID
         })();
     </script>
 </head>
@@ -79,10 +79,11 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
-            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            emailjs.sendForm('service_gj6jd2l', 'template_ph2g1as', this)
                 .then(function() {
                     alert('Message sent successfully!');
                 }, function(error) {
+                    console.error('EmailJS Error:', error);
                     alert('Failed to send message. Please try again later.');
                 });
         });
