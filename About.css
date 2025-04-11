@@ -80,6 +80,10 @@ footer {
     margin-top: 20px;
     font-size: 0.9em;
     color: #f1eded;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .profile h2{
     background: linear-gradient(to left, #4200fc, #f901fc);
