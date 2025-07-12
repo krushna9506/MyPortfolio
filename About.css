@@ -467,3 +467,53 @@ header nav .menu.active span:nth-child(3) {
     box-shadow: 0 4px 15px rgba(249, 1, 252, 0.5);
 }
 
+.testimonials {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(4, 5, 7, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(66, 0, 252, 0.2);
+}
+
+.testimonials h2 {
+    background: linear-gradient(to left, #4200fc, #f901fc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: clamp(20px, 7vw, 40px);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.testimonials ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.testimonials li {
+    border-left: 4px solid #4200fc;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.testimonials li:hover {
+    transform: translateX(10px);
+    border-left: 4px solid #f901fc;
+    background: rgba(4, 5, 7, 0.8);
+    box-shadow: 0 4px 15px rgba(66, 0, 252, 0.2);
+}
+
+.testimonials h3 {
+    color: #008ae0;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.testimonials p {
+    color: #f1eded;
+    margin: 3px 0;
+}
+
